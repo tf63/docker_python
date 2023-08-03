@@ -1,0 +1,17 @@
+{
+    // 参考 https://zenn.dev/bun913/articles/f0a6c6177a4716
+    "name": "Python",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "python",
+    "workspaceFolder": "/app",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "ms-python.python",
+                "ms-python.black-formatter",
+                "ms-python.flake8"
+            ]
+        }
+    }
+}

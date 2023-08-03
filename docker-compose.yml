@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  python:
+    build:
+      context: .
+      dockerfile: containers/python/Dockerfile
+    tty: true
+    volumes:
+      - ./:/app
