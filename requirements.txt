@@ -1,4 +1,0 @@
-numpy
-matplotlib
-flake8
-black

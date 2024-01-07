@@ -1,8 +1,13 @@
-# my
-out/
+# ---------------------------------------------
+# Local
+# ---------------------------------------------
 .DS_Store
-migrations/
-.env.prod
+.out
+.env
+
+venv/
+out/
+data/
 
 # ---------------------------------------------
 # Python
@@ -40,65 +45,45 @@ share/python-wheels/
 MANIFEST
 
 # ---------------------------------------------
-# Go (https://github.com/github/gitignore/blob/main/Go.gitignore)
+# Poetry
 # ---------------------------------------------
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
+*.pyc
+
+# Packages
+*.egg
+!/tests/**/*.egg
+/*.egg-info
+/dist/*
+build
+_build
+.cache
 *.so
-*.dylib
 
-# Test binary, built with `go test -c`
-*.test
+# Installer logs
+pip-log.txt
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# Unit test / coverage reports
+.coverage
+.pytest_cache
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+.idea/*
+.python-version
+# .vscode/*
 
-# Go workspace file
-go.work
+# /test.py
+# /test_*.*
 
-# ---------------------------------------------
-# React
-# ---------------------------------------------
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+/setup.cfg
+MANIFEST.in
+/setup.py
+/docs/site/*
+# /tests/fixtures/simple_project/setup.py
+# /tests/fixtures/project_with_extras/setup.py
+.mypy_cache
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+.venv
+/releases/*
+pip-wheel-metadata
+/poetry.toml
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+poetry/core/*
